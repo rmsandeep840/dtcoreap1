@@ -15,7 +15,7 @@ pipelines:
             script:
               - export SOLUTION_NAME=ClassLibrary1
               - REPORTS_PATH=./test-reports/build_${BITBUCKET_BUILD_NUMBER}
-              - dotnet restore SOLUTION_NAME.sln
+              - dotnet restore $SOLUTION_NAME.sln
               - dotnet build --no-restore $SOLUTION_NAME.sln --configuration $CONFIGURATION
               - dotnet test --no-build $SOLUTION_NAME.sln
  
