@@ -43,7 +43,7 @@ namespace XUnitTestProjectForClassLibrary
             var result = obj.SubtractNumbers(25, 10);
 
             Assert.Equal(15, result);
-            System.Console.WriteLine("Test Passed with Flying Colors ************************************");
+            System.Console.WriteLine("Test Passed with Flying Colors ************************************ :)");
         }
 
     }
